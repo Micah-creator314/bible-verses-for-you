@@ -1,1 +1,0 @@
-# bible-verses-for-you
