@@ -26,10 +26,10 @@ button:hover {
 }
 
 .quote-box {
-  background-color: #e6d4f5;
+  background-color: #e6d4f5; /* light lavender */
   padding: 30px;
   border-radius: 15px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
-  color: white;
+  color: black; /* <-- this makes the text black */
 }
