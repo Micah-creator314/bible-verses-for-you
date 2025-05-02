@@ -1,12 +1,12 @@
 body {
+  font-family: 'Georgia', serif;
+  background: linear-gradient(to right, #4e4376, #7a5f9a, #b49fcc, #e0c3fc);
+  color: #333;
   margin: 0;
   height: 100vh;
-  background-color: purple;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: Arial, sans-serif;
-  color: white;
 }
 
 .container {
