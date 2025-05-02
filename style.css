@@ -33,3 +33,17 @@ button:hover {
   margin-bottom: 20px;
   color: black; /* <-- this makes the text black */
 }
+#reminderBtn {
+  background-color: #d1b3ff;
+  color: black;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 1em;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+#reminderBtn.enabled {
+  background-color: #b39ddb;
+}
