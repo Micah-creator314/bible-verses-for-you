@@ -42,3 +42,27 @@ function newQuote() {
 }
 
 document.getElementById("quote").textContent = getDailyQuote();
+function toggleReminder() {
+  const btn = document.getElementById('reminderBtn');
+  const isEnabled = localStorage.getItem('dailyReminder') === 'true';
+
+  if (isEnabled) {
+    localStorage.setItem('dailyReminder', 'false');
+    btn.classList.remove('enabled');
+    btn.textContent = '🔔 Enable Daily Reminder';
+  } else {
+    localStorage.setItem('dailyReminder', 'true');
+    btn.classList.add('enabled');
+    btn.textContent = '🔕 Disable Daily Reminder';
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const btn = document.getElementById('reminderBtn');
+  const isEnabled = localStorage.getItem('dailyReminder') === 'true';
+
+  if (isEnabled) {
+    btn.classList.add('enabled');
+    btn.textContent = '🔕 Disable Daily Reminder';
+  }
+});
