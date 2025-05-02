@@ -1,6 +1,6 @@
 body {
   font-family: 'Georgia', serif;
-  background: linear-gradient(to right, #4e4376, #7a5f9a, #b49fcc, #e0c3fc);
+  background: linear-gradient(to right, #2e003e, #5c2a9d, #a974c5, #f7c6d9, #e0c3fc);
   color: #333;
   margin: 0;
   height: 100vh;
@@ -8,7 +8,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 .container {
   text-align: center;
 }
