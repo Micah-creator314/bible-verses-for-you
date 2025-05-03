@@ -1,62 +1,50 @@
 body {
-  font-family: Georgia, serif;
+  font-family: 'Georgia', serif;
+  background: linear-gradient(to right, #2e003e, #5c2a9d, #a974c5, #f7c6d9, #e0c3fc);
+  color: white;
   margin: 0;
-  padding: 0;
-  font-family: 'Quicksand', sans-serif;
-  background: linear-gradient(to bottom, #b3dffc, #e0f7ff);
-  color: #ffffff;
-  min-height: 100vh;
-  position: relative;
-  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-body::before,
-body::after {
-  content: "";
-  position: absolute;
-  background: url('https://www.transparenttextures.com/patterns/clouds.png');
-  opacity: 0.15;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 0;
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: white;
+  color: purple;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.card {
-  max-width: 600px;
-  margin: 100px auto;
-  background: rgba(255, 255, 255, 0.9);
-  border-radius: 25px;
-  padding: 40px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  position: relative;
-  z-index: 1;
-  text-align: center;
+button:hover {
+  background-color: #e0e0e0;
 }
 
-.card h1 {
-  font-family: 'Dancing Script', cursive;
-  font-size: 2.5rem;
-  color: #6699cc;
+.quote-box {
+  background-color: #e6d4f5; /* light lavender */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
+  color: black; /* <-- this makes the text black */
+}
+#reminderBtn {
+  background-color: #d1b3ff;
+  color: black;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 1em;
+  margin-top: 10px;
+  cursor: pointer;
 }
 
-.card p {
-  font-size: 1.2rem;
-  color: #333333;
-  line-height: 1.6;
+#reminderBtn.enabled {
+  background-color: #b39ddb;
 }
 
-.accent {
-  position: absolute;
-  font-size: 2rem;
-  color: #ffd1dc;
-  animation: float 6s ease-in-out infinite;
-  z-index: 0;
-}
-
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-15px); }
-}
